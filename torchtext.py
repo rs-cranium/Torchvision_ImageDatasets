@@ -1,9 +1,9 @@
 import torch
-from torchtext import datasets as data
+from torchtext import datasets
 import random
 
 # Download and load the AG_NEWS dataset
-train_dataset, test_dataset = data.AG_NEWS(root='.', split=('train', 'test'))
+train_dataset, test_dataset = datasets.AG_NEWS(root='.', split=('train', 'test'))
 
 # Get a random example from the training dataset
 random_index = random.randint(0, len(train_dataset) - 1)
