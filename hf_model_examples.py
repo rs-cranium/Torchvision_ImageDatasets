@@ -46,8 +46,7 @@ trainer.train()
 from transformers import AutoModelForSequenceClassification
 
 # Example: Load model from Model Hub
-model_identifier = "albert/albert-base-v1"
-model = AutoModelForSequenceClassification.from_pretrained(model_identifier)
+model = AutoModelForSequenceClassification.from_pretrained("albert/albert-base-v1")
 
 ### Method 6: Custom Models ###
 
