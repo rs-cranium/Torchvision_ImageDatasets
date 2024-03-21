@@ -2,7 +2,7 @@ from transformers import AutoModel, AutoTokenizer, BertConfig
 
 def load_model(model_name, hyperparameters):
     # Create a config with the hyperparameters
-    config = BertConfig.from_pretrained(model_name,
+    config = BertConfig.from_pretrained(model_name
                                         **hyperparameters)
 
     # Load the tokenizer
@@ -10,7 +10,7 @@ def load_model(model_name, hyperparameters):
 
     # Load the model with the config
     model = AutoModel.from_pretrained(model_name,
-                                      config=config)
+                                      config=config
 
     return tokenizer, model
 
