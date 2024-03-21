@@ -9,7 +9,7 @@ def load_model(model_name, hyperparameters):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     # Load the model with the config
-    model = AutoModel.from_pretrained(model_name,
+    model = AutoModel.from_pretrained(model_name
                                       config=config)
 
     return tokenizer, model
